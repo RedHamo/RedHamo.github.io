@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redhamo.github.io</id>
-    <title>Gridea</title>
-    <updated>2019-12-05T20:09:22.556Z</updated>
+    <title>红毛小鼠的博客</title>
+    <updated>2019-12-05T20:16:33.846Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://redhamo.github.io"/>
     <link rel="self" href="https://redhamo.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://redhamo.github.io/images/avatar.png</logo>
     <icon>https://redhamo.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2019, 红毛小鼠的博客</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://redhamo.github.io/post/hello-gridea</id>
