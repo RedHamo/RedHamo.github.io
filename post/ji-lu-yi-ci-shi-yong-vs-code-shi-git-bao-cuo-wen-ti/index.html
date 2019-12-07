@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>红毛小鼠的博客</title>
+<title>🆚记录一次使用VS Code时，Git报错问题 | 红毛小鼠的博客</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -97,17 +97,15 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti">
-                  <h2 class="post-title">🆚记录一次使用VS Code时，Git报错问题</h2>
-                </a>
-                <div class="post-date">
-                  2019-12-07
-                </div>
-                <div class="post-abstract">
-                  <p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
+          <div class="post-detail">
+            <h2 class="post-title">🆚记录一次使用VS Code时，Git报错问题</h2>
+            <div class="post-date">2019-12-07</div>
+            
+              <div class="feature-container" style="background-image: url('https://redhamo.github.io/post-images/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti.png')">
+              </div>
+            
+            <div class="post-content">
+              <p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
 ⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
 之后，我在网上搜索了很多相关的资料</p>
 <ol>
@@ -123,37 +121,47 @@
 <li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
 </ol>
 <p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
+<!-- more -->
+<blockquote>
+<p>&gt; git rev-parse --show-toplevel<br>
+&gt; git rev-parse --git-dir<br>
+Open repository: c:\Users\Administrator<br>
+&gt; git status -z -u</p>
+</blockquote>
+<!-- more -->
+<h1 id="出错原因调查">出错原因调查</h1>
+<p>之后我打开c:\Users\Administrator目录，发现该目录下面有一个.get的文件夹，这才发现其中的问题，原来vscode打开一个文件的时候，而不是打开一个文件，默认路径是c:\Users，所以git检测到Users里面存在这么一个文件夹，c:\Users\Administrator，里面有.git，因此会出现上述问题</p>
+<h1 id="解决办法">解决办法</h1>
+<p>所以直接删除掉报错目录下的.git文件夹，就解决该问题了</p>
 
-                </div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://redhamo.github.io/tag/DVSREPs1C" class="tag">
+                    VS Code
+                  </a>
+                
+                  <a href="https://redhamo.github.io/tag/YuUTNkxmkm" class="tag">
+                    Git
+                  </a>
+                
               </div>
-              
-                <a class="right" href="https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti">
-                  <div class="feature-container" style="background-image: url('https://redhamo.github.io/post-images/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
                 <a href="https://redhamo.github.io/post/about">
-                  <h2 class="post-title">关于</h2>
+                  <h3 class="post-title">
+                    关于
+                  </h3>
                 </a>
-                <div class="post-date">
-                  2019-01-25
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
               </div>
-              
-            </article>
-          
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+
+          </div>
 
         </div>
       </div>

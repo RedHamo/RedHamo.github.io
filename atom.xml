@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redhamo.github.io</id>
     <title>红毛小鼠的博客</title>
-    <updated>2019-12-05T20:17:17.156Z</updated>
+    <updated>2019-12-07T16:07:35.228Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://redhamo.github.io"/>
     <link rel="self" href="https://redhamo.github.io/atom.xml"/>
@@ -11,35 +11,70 @@
     <icon>https://redhamo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 红毛小鼠的博客</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://redhamo.github.io/post/hello-gridea</id>
-        <link href="https://redhamo.github.io/post/hello-gridea">
+        <title type="html"><![CDATA[🆚记录一次使用VS Code时，Git报错问题]]></title>
+        <id>https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti</id>
+        <link href="https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2019-12-07T15:23:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
+⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+之后，我在网上搜索了很多相关的资料</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/53217954/git-repository-issue-wrong-folder">转换英文搜索</a><br>
+<strong>关键词</strong>：The git repository at 'c:\Users\Administrator' has too many active changes<br>
+<strong>结果</strong>：找到了一位和我有相同遭遇的哥们，但是没有得到一个完美的答复</li>
+<li><a href="https://www.zhihu.com/question/270017674?sort=created">知乎</a><br>
+<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+<strong>结果</strong>：找到的结果对于我目前遇到的问题基本没有什么参考价值</li>
+<li><a href="https://blog.csdn.net/cijiancao/article/details/80819975">CSDN</a><br>
+<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+<strong>结果</strong>：虽然说和我遇到的问题不一致，我还是抱着试试看的心态尝试着去执行了一遍里面的操作，结果当然还是没有什么结果，问题依然还有</li>
+<li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
+</ol>
+<p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
+⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+之后，我在网上搜索了很多相关的资料</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/53217954/git-repository-issue-wrong-folder">转换英文搜索</a><br>
+<strong>关键词</strong>：The git repository at 'c:\Users\Administrator' has too many active changes<br>
+<strong>结果</strong>：找到了一位和我有相同遭遇的哥们，但是没有得到一个完美的答复</li>
+<li><a href="https://www.zhihu.com/question/270017674?sort=created">知乎</a><br>
+<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+<strong>结果</strong>：找到的结果对于我目前遇到的问题基本没有什么参考价值</li>
+<li><a href="https://blog.csdn.net/cijiancao/article/details/80819975">CSDN</a><br>
+<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
+<strong>结果</strong>：虽然说和我遇到的问题不一致，我还是抱着试试看的心态尝试着去执行了一遍里面的操作，结果当然还是没有什么结果，问题依然还有</li>
+<li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
+</ol>
+<p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<blockquote>
+<p>&gt; git rev-parse --show-toplevel<br>
+&gt; git rev-parse --git-dir<br>
+Open repository: c:\Users\Administrator<br>
+&gt; git status -z -u</p>
+</blockquote>
+<!-- more -->
+<h1 id="出错原因调查">出错原因调查</h1>
+<p>之后我打开c:\Users\Administrator目录，发现该目录下面有一个.get的文件夹，这才发现其中的问题，原来vscode打开一个文件的时候，而不是打开一个文件，默认路径是c:\Users，所以git检测到Users里面存在这么一个文件夹，c:\Users\Administrator，里面有.git，因此会出现上述问题</p>
+<h1 id="解决办法">解决办法</h1>
+<p>所以直接删除掉报错目录下的.git文件夹，就解决该问题了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://redhamo.github.io/post/about</id>
+        <link href="https://redhamo.github.io/post/about">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<p>😀<br>
+欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+<h2 id="关于本站">🏠 关于本站</h2>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<h2 id="联系我呀">📬 联系我呀</h2>
 ]]></content>
     </entry>
 </feed>
