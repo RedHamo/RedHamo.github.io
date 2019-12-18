@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redhamo.github.io</id>
     <title>红毛小鼠的博客</title>
-    <updated>2019-12-08T15:28:33.122Z</updated>
+    <updated>2019-12-18T11:06:44.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://redhamo.github.io"/>
     <link rel="self" href="https://redhamo.github.io/atom.xml"/>
@@ -11,31 +11,69 @@
     <icon>https://redhamo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 红毛小鼠的博客</rights>
     <entry>
+        <title type="html"><![CDATA[努力的活下去  🌺城南花已开🌺]]></title>
+        <id>https://redhamo.github.io/post/nu-li-de-huo-xia-qu-cheng-nan-hua-yi-kai</id>
+        <link href="https://redhamo.github.io/post/nu-li-de-huo-xia-qu-cheng-nan-hua-yi-kai">
+        </link>
+        <updated>2019-12-18T10:21:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>春风入城南，城北亦无寒<br>
+城南花已开，愿君永常在<br>
+城南花似海，花香传城南<br>
+共举油纸伞，笑颜往城南<br>
+若君今不来，甘愿待君还<br>
+备好油纸伞，共赏花再开<br>
+城南花已开，而君今何在</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>春风入城南，城北亦无寒<br>
+城南花已开，愿君永常在<br>
+城南花似海，花香传城南<br>
+共举油纸伞，笑颜往城南<br>
+若君今不来，甘愿待君还<br>
+备好油纸伞，共赏花再开<br>
+城南花已开，而君今何在</p>
+<!-- more -->
+<p>有一段时间，我一直在思考一个问题，人为什么活着<br>
+安慰自己已经达到了程序员的最高境界</p>
+<blockquote>
+<p>xxx程序员知识体系<br>
+xxx入门基础<br>
+xxx语言应用实战<br>
+xxx算法与数据结构<br>
+编程之美<br>
+编程之道<br>
+编程之禅<br>
+颈椎病康复指南<br>
+活着</p>
+</blockquote>
+<p>最近看到一位朋友的QQ网名，好奇之下将该网名输入到百度，看到了一则故事，感觉稍微有点明白了我上面所阐述的问题 ** 人为什么活着 **</p>
+<p>故事讲述的是一位喜欢三亩地音乐的朋友，他得了骨癌已经到了晚期，可能还有半年的时间，希望音乐人三亩地用他网易云音乐的ID写首曲子，他很喜欢城南花已开的id，音乐人三亩地于2017年3月终于完成了！作者送给城南花已开<a href="https://music.163.com/#/song?id=468176711">这首歌</a>，希望他能听到，希望一切都好！</p>
+<p>作曲人三亩地评论：前段时间一位喜欢我音乐的朋友私信我，说他得了骨癌还有半年的时间，希望我用他的云音乐的ID写首曲子，他很喜欢他的ID，然后发给我很多医院的照片怕我不相信，我看到消息的时候正好没有设备和乐器去创作，把运输的设备弄好第一时间去创作，终于完成了！送给城南花已开，希望你能听到，一切都好！<br>
+<img src="https://redhamo.github.io/post-images/1576666184942.jpg" alt=""></p>
+<p>而城南花已开也紧接着发表了评论：<br>
+<img src="https://redhamo.github.io/post-images/1576666304226.png" alt=""></p>
+<p>云村的大家也都在对城南花已开鼓励，加油，打气。<br>
+<img src="https://redhamo.github.io/post-images/1576666488746.png" alt=""><br>
+<img src="https://redhamo.github.io/post-images/1576667126958.png" alt=""><br>
+<img src="https://redhamo.github.io/post-images/1576667180168.png" alt=""></p>
+<p>可惜，城南花已开最终还是没有逃出病痛的魔爪<br>
+<img src="https://redhamo.github.io/post-images/1576666891089.jpg" alt=""></p>
+<p>我们为什么活着？为了死亡。为什么明知会死还要努力的活下去？因为想看一眼明天的太阳。一生短短几十年，有太多的放不下与不甘心。人生在世，有太多的幸与不幸。每一个人都有不一样的开始，却都有不一样的结局。所以，努力的活下去，为亲人，甚至为陌生人。我一直在，我们一直在。</p>
+<p>人生苦短，并不是所有人一生都是平平坦坦的，幸与不幸之间都是一种磨难，城南花已开的故事会继续激励着大家，逝者安息，希望大家好好珍惜眼前人，好好珍惜现在的生活！</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[🆚记录一次使用VS Code时，Git报错问题]]></title>
         <id>https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti</id>
         <link href="https://redhamo.github.io/post/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti">
         </link>
         <updated>2019-12-07T15:23:58.000Z</updated>
         <summary type="html"><![CDATA[<p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
-⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-之后，我在网上搜索了很多相关的资料</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/53217954/git-repository-issue-wrong-folder">转换英文搜索</a><br>
-<strong>关键词</strong>：The git repository at 'c:\Users\Administrator' has too many active changes<br>
-<strong>结果</strong>：找到了一位和我有相同遭遇的哥们，但是没有得到一个完美的答复</li>
-<li><a href="https://www.zhihu.com/question/270017674?sort=created">知乎</a><br>
-<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-<strong>结果</strong>：找到的结果对于我目前遇到的问题基本没有什么参考价值</li>
-<li><a href="https://blog.csdn.net/cijiancao/article/details/80819975">CSDN</a><br>
-<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-<strong>结果</strong>：虽然说和我遇到的问题不一致，我还是抱着试试看的心态尝试着去执行了一遍里面的操作，结果当然还是没有什么结果，问题依然还有</li>
-<li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
-</ol>
-<p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
+⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
-⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-之后，我在网上搜索了很多相关的资料</p>
+⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能</p>
+<!-- more -->
+<p>之后，我在网上搜索了很多相关的资料</p>
 <ol>
 <li><a href="https://stackoverflow.com/questions/53217954/git-repository-issue-wrong-folder">转换英文搜索</a><br>
 <strong>关键词</strong>：The git repository at 'c:\Users\Administrator' has too many active changes<br>
@@ -49,14 +87,12 @@
 <li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
 </ol>
 <p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
-<!-- more -->
 <blockquote>
 <p>&gt; git rev-parse --show-toplevel<br>
 &gt; git rev-parse --git-dir<br>
 Open repository: c:\Users\Administrator<br>
 &gt; git status -z -u</p>
 </blockquote>
-<!-- more -->
 <h1 id="出错原因调查">出错原因调查</h1>
 <p>之后我打开c:\Users\Administrator目录，发现该目录下面有一个.get的文件夹，这才发现其中的问题，原来vscode打开一个文件的时候，而不是打开一个文件，默认路径是c:\Users，所以git检测到Users里面存在这么一个文件夹，c:\Users\Administrator，里面有.git，因此会出现上述问题</p>
 <h1 id="解决办法">解决办法</h1>
