@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://redhamo.github.io</id>
     <title>红毛小鼠的博客</title>
-    <updated>2019-12-18T11:06:44.993Z</updated>
+    <updated>2019-12-23T15:00:52.877Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://redhamo.github.io"/>
     <link rel="self" href="https://redhamo.github.io/atom.xml"/>
@@ -10,6 +10,66 @@
     <logo>https://redhamo.github.io/images/avatar.png</logo>
     <icon>https://redhamo.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 红毛小鼠的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[请写出打印值,并思考这是为什么]]></title>
+        <id>https://redhamo.github.io/post/fei-chang-you-yi-si-de-yi-dao-javascript-ji-chu-ti</id>
+        <link href="https://redhamo.github.io/post/fei-chang-you-yi-si-de-yi-dao-javascript-ji-chu-ti">
+        </link>
+        <updated>2019-12-23T14:16:33.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>这是一道非常有意思的一道JavaScript基础题</strong></p>
+<p>大家看到这里的话，先不要点开，就是下面这些代码，自己先想想，得到一个答案，然后再点进来，看看真实情况和你想的是不是一样呢，或者说你自己在电脑上敲了这段代码，对得到的结论不理解，点开。<br>
+我认为只有自己去思考了，去做了，才能对这个知识点记得更牢固一些，才能更快的去理解其原理。</p>
+<pre><code class="language-javascript">    console.log(a)
+    a();
+    var a = 1;
+    function a(){
+        console.log(2)
+    }
+    console.log(a)
+    a=3;
+    a();
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>这是一道非常有意思的一道JavaScript基础题</strong></p>
+<p>大家看到这里的话，先不要点开，就是下面这些代码，自己先想想，得到一个答案，然后再点进来，看看真实情况和你想的是不是一样呢，或者说你自己在电脑上敲了这段代码，对得到的结论不理解，点开。<br>
+我认为只有自己去思考了，去做了，才能对这个知识点记得更牢固一些，才能更快的去理解其原理。</p>
+<pre><code class="language-javascript">    console.log(a)
+    a();
+    var a = 1;
+    function a(){
+        console.log(2)
+    }
+    console.log(a)
+    a=3;
+    a();
+</code></pre>
+<!-- more -->
+<p>拿到这道题，你需要思考程序的执行顺序，以及JS中的一些比较细节的东西，从这道题中也可以看出来你的JS基础功底到底扎实不扎实。</p>
+<p>首先，这道题的第一行是进行了打印a，但是有的同学就在想了，我a都没有定义，这不直接报错了吗，其实不是的，在JS中，有这么一个概念，叫做变量提升<br>
+<a href="https://www.cnblogs.com/oxiaojiano/p/7918967.html" title="标题">变量提升</a>:变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
+<p>相信你看了上面的文章后，大概理解了变量提升的概念了，那么回到这道题上<br>
+根据变量提升的规则，上面的代码，可以被改造成下面这样</p>
+<pre><code class="language-javascript">    var a;
+    var a = function(){
+        console.log(2)
+    }
+    console.log(a)
+    a();
+    a = 1;
+    console.log(a)
+    a=3;
+    a();
+</code></pre>
+<p>改造成上面这样，那结果自然就出来了，</p>
+<ol>
+<li>第5行打印的是函数体本身，</li>
+<li>第6行执行了函数a，然后打印出来2，</li>
+<li>由于第7行又给a赋值了数字1，那么第8行打印出来的就是1了</li>
+<li>由于第9行给a赋值了数字3，此时a不是一个函数，在第10行执行a()时，会报错“a is not a function”</li>
+</ol>
+<p>以上，就是我对这道题的解析，希望大家都能从中得到收益</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[努力的活下去  🌺城南花已开🌺]]></title>
         <id>https://redhamo.github.io/post/nu-li-de-huo-xia-qu-cheng-nan-hua-yi-kai</id>

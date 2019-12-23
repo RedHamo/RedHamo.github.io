@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>🆚记录一次使用VS Code时，Git报错问题 | 红毛小鼠的博客</title>
+<title>请写出打印值,并思考这是为什么 | 红毛小鼠的博客</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,51 +98,58 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">🆚记录一次使用VS Code时，Git报错问题</h2>
-            <div class="post-date">2019-12-07</div>
+            <h2 class="post-title">请写出打印值,并思考这是为什么</h2>
+            <div class="post-date">2019-12-23</div>
             
-              <div class="feature-container" style="background-image: url('https://redhamo.github.io/post-images/ji-lu-yi-ci-shi-yong-vs-code-shi-git-bao-cuo-wen-ti.png')">
+              <div class="feature-container" style="background-image: url('https://redhamo.github.io/post-images/fei-chang-you-yi-si-de-yi-dao-javascript-ji-chu-ti.png')">
               </div>
             
             <div class="post-content">
-              <p>📌不知道做了什么，今天打开vscode后，右下角有一个弹窗，大致内容是<br>
-⚠️Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能</p>
+              <p><strong>这是一道非常有意思的一道JavaScript基础题</strong></p>
+<p>大家看到这里的话，先不要点开，就是下面这些代码，自己先想想，得到一个答案，然后再点进来，看看真实情况和你想的是不是一样呢，或者说你自己在电脑上敲了这段代码，对得到的结论不理解，点开。<br>
+我认为只有自己去思考了，去做了，才能对这个知识点记得更牢固一些，才能更快的去理解其原理。</p>
+<pre><code class="language-javascript">    console.log(a)
+    a();
+    var a = 1;
+    function a(){
+        console.log(2)
+    }
+    console.log(a)
+    a=3;
+    a();
+</code></pre>
 <!-- more -->
-<p>之后，我在网上搜索了很多相关的资料</p>
+<p>拿到这道题，你需要思考程序的执行顺序，以及JS中的一些比较细节的东西，从这道题中也可以看出来你的JS基础功底到底扎实不扎实。</p>
+<p>首先，这道题的第一行是进行了打印a，但是有的同学就在想了，我a都没有定义，这不直接报错了吗，其实不是的，在JS中，有这么一个概念，叫做变量提升<br>
+<a href="https://www.cnblogs.com/oxiaojiano/p/7918967.html" title="标题">变量提升</a>:变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
+<p>相信你看了上面的文章后，大概理解了变量提升的概念了，那么回到这道题上<br>
+根据变量提升的规则，上面的代码，可以被改造成下面这样</p>
+<pre><code class="language-javascript">    var a;
+    var a = function(){
+        console.log(2)
+    }
+    console.log(a)
+    a();
+    a = 1;
+    console.log(a)
+    a=3;
+    a();
+</code></pre>
+<p>改造成上面这样，那结果自然就出来了，</p>
 <ol>
-<li><a href="https://stackoverflow.com/questions/53217954/git-repository-issue-wrong-folder">转换英文搜索</a><br>
-<strong>关键词</strong>：The git repository at 'c:\Users\Administrator' has too many active changes<br>
-<strong>结果</strong>：找到了一位和我有相同遭遇的哥们，但是没有得到一个完美的答复</li>
-<li><a href="https://www.zhihu.com/question/270017674?sort=created">知乎</a><br>
-<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-<strong>结果</strong>：找到的结果对于我目前遇到的问题基本没有什么参考价值</li>
-<li><a href="https://blog.csdn.net/cijiancao/article/details/80819975">CSDN</a><br>
-<strong>关键词</strong>：Git 存储库“c:\Users\Administrator”中存在大量活动更改,将仅启用部分 Git 功能<br>
-<strong>结果</strong>：虽然说和我遇到的问题不一致，我还是抱着试试看的心态尝试着去执行了一遍里面的操作，结果当然还是没有什么结果，问题依然还有</li>
-<li>其他的也就不怎么说了，都是经历了一段时间的查找验证，空手而归</li>
+<li>第5行打印的是函数体本身，</li>
+<li>第6行执行了函数a，然后打印出来2，</li>
+<li>由于第7行又给a赋值了数字1，那么第8行打印出来的就是1了</li>
+<li>由于第9行给a赋值了数字3，此时a不是一个函数，在第10行执行a()时，会报错“a is not a function”</li>
 </ol>
-<p>查询无果之后，我在vscode中git选项卡中，点击右边的三个点，显示GIT输出，查看我vscode执行的git命令，如下所示：</p>
-<blockquote>
-<p>&gt; git rev-parse --show-toplevel<br>
-&gt; git rev-parse --git-dir<br>
-Open repository: c:\Users\Administrator<br>
-&gt; git status -z -u</p>
-</blockquote>
-<h1 id="出错原因调查">出错原因调查</h1>
-<p>之后我打开c:\Users\Administrator目录，发现该目录下面有一个.get的文件夹，这才发现其中的问题，原来vscode打开一个文件的时候，而不是打开一个文件，默认路径是c:\Users，所以git检测到Users里面存在这么一个文件夹，c:\Users\Administrator，里面有.git，因此会出现上述问题</p>
-<h1 id="解决办法">解决办法</h1>
-<p>所以直接删除掉报错目录下的.git文件夹，就解决该问题了</p>
+<p>以上，就是我对这道题的解析，希望大家都能从中得到收益</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://redhamo.github.io/tag/DVSREPs1C" class="tag">
-                    VS Code
-                  </a>
-                
-                  <a href="https://redhamo.github.io/tag/YuUTNkxmkm" class="tag">
-                    Git
+                  <a href="https://redhamo.github.io/tag/k7A__Cy3x" class="tag">
+                    JavaScript
                   </a>
                 
               </div>
@@ -150,9 +157,9 @@ Open repository: c:\Users\Administrator<br>
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://redhamo.github.io/post/about">
+                <a href="https://redhamo.github.io/post/nu-li-de-huo-xia-qu-cheng-nan-hua-yi-kai">
                   <h3 class="post-title">
-                    关于
+                    努力的活下去  🌺城南花已开🌺
                   </h3>
                 </a>
               </div>
